@@ -1,0 +1,55 @@
+/* Write your CSS here */
+.imageIcon {
+  width: 60px;
+  margin-right: 20px;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.typeOfBalanceText {
+  font-family: 'Beer Serif';
+}
+.amountNum {
+  font-weight: 600;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .Card {
+    width: 30%;
+    flex-shrink: 1;
+  }
+}
+
+.balanceCard {
+  border-color: #84cc16;
+  background-color: #ecfccb;
+}
+.incomeCard {
+  border-color: #06b6d4;
+  background-color: #cffafe;
+}
+.ExpensesCard {
+  border-color: #7c3aed;
+  background-color: #ede9fe;
+}
